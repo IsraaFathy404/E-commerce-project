@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+   <!-- Font Awesome CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Document</title>
+ <style>
+
+/* MAIN STYLES*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+            background-color: #f9f9f9;
+            font-family:  serif;
+        }
+
+.navbar-nav .nav-link .fas .badge {
+    font-size: 90px; /* Adjust the size of the icons */
+    margin-right: 60px; /* Add some spacing between icon and text */}
+ 
+  /* Add this CSS to your existing stylesheet or in a <style> tag in your HTML */
+    .carousel-item {
+    position: relative; /* Ensure positioning context for absolute positioning of content */
+    height: 500px; /* Adjust the height as needed */
+  }
+
+  .carousel-item .content {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Adjust left position as needed */
+    transform: translateY(-50%);
+    color:black; /* Text color */
+  }
+
+  .carousel-item .content h1 {
+    margin-bottom: 15px; /* Adjust as needed */
+  }
+
+  .carousel-item .content .btn {
+    background-color: black; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  /* Adjust background size to make it smaller */
+  .carousel-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 15px;
+  }
+  .badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  
+ 
+ </style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/Colorful Illustrative Online Shop Logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./contact-us.html">contact-us</a>
+          </li>
+        </ul>
+
+<ul class="navbar-nav  mb-2 mb-lg-0">
+  <li class="nav-item">
+    <a class="nav-link" href="#"  style="position: relative;"><i class="fas fa-heart"  ></i> 
+      <span class="badge bg-danger">0</span>
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="./cart.html" style="position: relative;">
+      <i class="fas fa-shopping-cart"></i><span class="badge bg-danger">0</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./login.html"><i class="fas fa-user"></i> </a>
+  </li>
+
+</ul>
+       
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000" style="background-image: url('assets/images/slider01.jpg');">
+        <div class="content">
+          <h1>This is the description <hr> 
+                for image 1.</h1>
+          <p class="price">Starting at $7.99</p>
+          <br>
+          <button class="btn">Shop Now</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000" style="background-image: url('assets/images/slider02.jpg');">
+        <div class="content">
+          <h1>This is the description <br> for image 2.</h1>
+          <br>
+          <button class="btn">Shop Now</button>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('assets/images/slider03.jpg');">
+        <div class="content">
+          <h1>This is the description for <br> image 3.</h1>
+          <br>
+          <button class="btn">Shop Now</button>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/fech-products.js"></script>
+
+  <script src="./assets/js/fech-products.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
